@@ -1,1 +1,1 @@
-# JavaBasics This repository includes my java basics notes 
+This repository includes my java basics notes 
