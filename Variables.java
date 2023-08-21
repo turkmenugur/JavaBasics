@@ -130,6 +130,87 @@ public class Variables {
         System.out.println(y);
         System.out.println(z);
 
+        //Boxing ve unboxing kavramları
+        /* Primitive tiplerin wrapper sınıflar içine gömülmesine boxing
+         * Bunun tersi olarak da sınıf nesnelerinin ilkel tiplere dönüştürülmesine de unboxing denir
+         * Bunları derleyici otomatik olarak yapar
+         * Normalde r değeri bir nesne olduğu için bunun değerini arttıramayız. Bunu yapabilmek için unboxing işlemine ihtiyaç vardır. Yani bunu ilkel bir tipe dönüştüremeyiz. Daha sonra ihtiyaca göre tekrar referans tipine dönüştürebiliriz. Bu gibi işlemler için boxing ve unboxing kullanılır.
+        */
+
+        int m = 5;
+        Integer n = new Integer(m); //boxing
+        int o = n.intValue(); //unboxing
+
+        //Lokal değişkenler
+        /* Döngü veya metod içerisinde tanımladığımız değişkenlerin yaşam süresi, o döngü veya metod bloklarından çıkana kadardır.
+         * Bloktan çıktığı zaman değişkenin sakladığı değer kaybolur.
+         * Burada tanımladığımız bir değişkene dışarıdan erişemeyiz. Bunlara lokal değişkenler denir.
+         */
+
+        for(int p = 0; p<3 ; p++){
+            int toplam = 1;
+            toplam += toplam;
+        }
+
+        // System.out.println(toplam); //Erişilemez
+
+        /* Type Casting */
+
+        //String to int
+        String variable = "5";
+        int i1 = Integer.valueOf(variable);
+        int i2 = Integer.parseInt(variable);
+
+        //valueOf metodu parseInt metoduna göre daha yavaştır. Ayrıca parseInt metodu int tipinde bir veri döndürürken valueOf metodu ise integer tipinde bir nesne döndürür
+
+        //int to String
+        int num = 9;
+        String string1 = String.valueOf(num);
+        String string2 = Integer.toString(num);
+
+        //double to int
+        double d1 = 345.2;
+        int s2 = (int)d1;
+        System.out.println(s2);
+
+        //int to double
+        int s3 = 345;
+        double d2 = (double)s3;
+        System.out.println(d2);
+
+        //float to long
+        float fltNumber = 347.6f;
+        long l1 = (long)fltNumber;
+        System.out.println(l1);
+
+        //long to float
+        long lngNumber = 3578;
+        float f2 = (float)lngNumber;
+        System.out.println(f2);
+
+
+        // final - sabit tanımlama
+        /* Programımızın herhangi bir yerinde değerinin değişmesini istemediğimiz değişkenleri sabit olarak tanımlarız
+         * final anahtar kelimes ile yapılmaktadır.
+         * Sabitlerde ilk değer atanması zorunluluğu vardır.
+         * Ya tanımlandığı ilk anda değeri verilecek ya da yapıcılar ile değeri atanacak
+        */
+
+        final int r = 5;
+        // r = 10; //hata alıyoruz
+
+        // final String ad;
+        // System.out.println(ad); //ilk değer verilmediği için hata alıyoruz
+
+        //Metod içinde tanımladıysak tanımlandığı satırdan sonra ilk değerini verebiliriz ancak metod içinde tanımlamadıysak tanımlandığı satırda ilk değeri verilmeli
+
+        final String string;
+        string = "a";
+        System.out.println(string);
 
     }
+
+    //Metod dışında olduğu için hatalı kullanım
+    // final String s2;
+    // s2 = "a";
 }
