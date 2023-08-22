@@ -1,5 +1,3 @@
-import javax.swing.plaf.BorderUIResource.EtchedBorderUIResource;
-
 public class Loops {
     public static void main(String[] args) {
         //Belirtilen koşul doğru olduğu sürece döngü içerisindeki komutlar çalışır ve koşul dışına çıktığında ise döngü biter
