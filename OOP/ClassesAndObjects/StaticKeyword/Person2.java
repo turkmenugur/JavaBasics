@@ -1,7 +1,7 @@
 package OOP.ClassesAndObjects.StaticKeyword;
 
 public class Person2 {
-    //People sınıfından farklı bir sınıf
+    //Person sınıfından farklı bir sınıf
 
     public static void main(String[] args) {
         System.out.println("Başlangıçta kişi sayısı: " + Person.number);

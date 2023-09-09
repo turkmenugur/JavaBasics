@@ -12,7 +12,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car c1 = new Car() //Car sınıfından c1 adında nesne oluşturuldu
+        Car c1 = new Car(); //Car sınıfından c1 adında nesne oluşturuldu
         c1.brand = "Chevrolet Camaro"; //nesnenin markası belirlendi
         c1.color = "Yellow Black"; //nesnenin rengi belirlendi
 
