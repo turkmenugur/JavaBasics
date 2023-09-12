@@ -14,7 +14,7 @@ public class Enum2 {
         
         switch(x){
             case 0: System.out.println("Ocak ayı");
-            break
+            break;
             case 1: System.out.println("Şubat ayı");
             break;
             case 2: System.out.println("Mart ayı");
