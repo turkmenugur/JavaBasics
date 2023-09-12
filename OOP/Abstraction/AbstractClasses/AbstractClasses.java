@@ -25,6 +25,8 @@ public class AbstractClasses {
      * Sadece bu soyut sınıftan türeyen sınıflar, bu metodu kullanarak kendileri için şekillendirirler.
      * Yani bu soyut metot alt sınıfların işine yarar.
      * 
-     * Soyut sınıflarda normal bir metod bulunabilir ve bu metoda static olarak tanımlanarak soyut sınıftan nesne üretmeden doğrudan sınıf adı ile erişilebilir. 
+     * Soyut sınıflarda normal bir metod bulunabilir ve bu metoda static olarak tanımlanarak soyut sınıftan nesne üretmeden doğrudan sınıf adı ile erişilebilir.
+     * 
+     * Genel olarak özetlemek gerekirse farklı veriler alıp aynı işlemi yapacaksak bunları soyut sınıflar kullanarak yapmamız gerekir. 
      */
 }
